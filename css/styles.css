@@ -38,15 +38,15 @@ a {
         text-decoration: none;
     }
 
-    /* html {
+     html {
         box-sizing: border-box;
-    } */
+    } 
 
-    /* *,
+    *,
     *::before,
     *::after {
         box-sizing: inherit;
-    } */
+    } 
 
     /* Стили Main*/ 
     
@@ -64,12 +64,13 @@ a {
 
     h2.index {
         font-family: Roboto;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 36px;
-        line-height: 1.17;
+        line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
+        padding-top: 94px;
         
     }
 
@@ -92,7 +93,10 @@ a {
         margin-bottom: 10px;
     }
 
-    .container {
+    .container_a  {
+        padding-bottom: 94px;
+    }
+    .container_b  {
         padding-bottom: 194px;
     }
 
@@ -101,12 +105,14 @@ a {
         {
             padding-bottom: 0px;
             width: 1600px;
-            height: 80px;
+            /* height: 280px; */
+            border: 1px solid #EEEEEE;
+            
             
         }
 
 
-    .container {
+    .container_b {
         padding-bottom: 0px;
         width: 1170px;
         margin: 0 215px 0px;
@@ -123,6 +129,7 @@ a {
         color: var(--link-primary-color);
         text-decoration: none;
         
+        
     }
 
     .logo b {
@@ -133,6 +140,7 @@ a {
         letter-spacing: 0.03em;
         color: #000000;
         text-decoration: none;
+        margin-top: 50px;
     }
 
     .link .studio {
@@ -141,6 +149,7 @@ a {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
+        
         letter-spacing: 0.03em;
         color: var(--link-seconary-color);
     }
@@ -156,7 +165,7 @@ a {
     }
 
     .main-nav {
-        padding: 32px 215px 0px 215px;
+        padding: 2px 215px 0px 215px;
         display: flex;
         align-items: center;
     }
@@ -225,6 +234,7 @@ a {
     /* Навигация (правая сторона) */
     .adress {
         display: flex;
+        list-style-type: none
         
 
     }
@@ -254,7 +264,7 @@ a {
         height: 600px;
         padding-bottom: 0px;
         margin-bottom: 0px;
-        margin-top: 60px;
+        /* margin-top: 60px; */
         text-align: center;
     }
 
@@ -295,6 +305,7 @@ a {
         .ahtung ul {
         display: flex;
         list-style-type: none;
+        padding-bottom: 94px;
     }
     
     .nameh3 {
@@ -324,13 +335,33 @@ a {
 
 
     /* Чем мы занимаемся */
-    .container ul {
+    .container_a ul, .container_b ul {
         display: flex;
         list-style-type: none;
     }
+    .container_a {
 
-    .container li:not(:last-child) {
+        background-color: var(--link-seconary-color);
+        padding-left: 215px;
+        padding-right: 215px;
+    }
+
+    .container_a li:not(:last-child) {
         margin-right: 30px;
+    }
+    .container_b li:not(:last-child) {
+        margin-right: 30px;
+        
+    }
+    .container_b li {
+        border-radius: 0px 0px 4px 4px;
+        background: var(--link-seconary-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+            
+    }
+    .container_b ul {
+        padding-bottom: 94px;
     }
 
     /* Наша команда */
@@ -406,14 +437,19 @@ a {
     .mainportfol {
         
         width: 1600px ;
-        height: 1360px;
+        /* height: 1400px; */
         margin-left: 0px;
         margin-bottom: 0px;
+        background-color: rgb(136, 53, 53);
     }
 
     .mainportfolbuton {
+        display: flex;
+        justify-content: center;
         text-align: center;
-        margin-top: 94px;
+        margin: 0px 215px auto;
+        list-style-type: none;
+        padding-top: 94px;
     }
 
     /* Список предложений */
@@ -428,7 +464,7 @@ a {
     .list-offer .portfolio {
         font-weight: 700;
         font-size: 18px;
-        line-height: -4;
+        line-height: -2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
         background: var(--link-seconary-color);
@@ -470,7 +506,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        margin-bottom: 94px;
+        padding-bottom: 94px;
         display: flex;
         flex-wrap: wrap;
         
@@ -499,7 +535,7 @@ a {
 
     /* Футер */
     footer {
-        padding: 10 50 100 200;
+        padding: 10 60 100 200;
         background: #2f303a;
         
     }
@@ -524,24 +560,27 @@ a {
         letter-spacing: 0.03em;
         text-transform: 0;
         display: inline-block;
-        padding-top: 56px;
+        
     }
 
     footer .mail,
     footer .tel {
         color: var(--footer-color);
         font-style: normal;
-        font-weight: normal;
+        
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+    }
+    .tel {
+        margin-bottom: 60px;
     }
 
   
 
 .ulfoot {
     list-style-type: none;
-    padding: 20px 100px 20px 0px;
+    padding: 0px 100px 60px 0px;
 }
     
 
@@ -556,7 +595,7 @@ a {
         justify-content: space-around;
     }
 
-    footer {
+    footer {        
         width: 1600px;
         padding-left: 215px;
         padding-right: 215px;
