@@ -7,6 +7,7 @@
 } 
 
 .index_none {
+        display: none;
         color: var(--link-seconary-color);
         inset: 0;
 }
@@ -64,7 +65,7 @@ a {
 
     h2.index {
         font-family: Roboto;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.19;
         text-align: center;
@@ -83,7 +84,7 @@ a {
 
     h3 {
         font-family: Roboto;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.87;
         text-align: center;
@@ -120,7 +121,7 @@ a {
     }
    
 
-    a.logo {
+    .logo {
         font-family: Raleway, sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -132,7 +133,7 @@ a {
         
     }
 
-    .logo b {
+    .logo_h {
         font-family: Raleway, sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -143,9 +144,22 @@ a {
         margin-top: 50px;
     }
 
+        .logo_f {
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: var(--link-seconary-color);
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+
     .link .studio {
         text-transform: none;
         font-family: Raleway, sans-serif;
+        color: #fff;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -464,7 +478,7 @@ a {
     .list-offer .portfolio {
         font-weight: 700;
         font-size: 18px;
-        line-height: -2;
+        line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
         background: var(--link-seconary-color);
