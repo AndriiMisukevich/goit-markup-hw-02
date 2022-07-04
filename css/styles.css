@@ -330,6 +330,7 @@ a {
         text-transform: uppercase;
         color: var(--primary-text-color);
         inset: 0;
+        margin-top: 94px;
         
     }
     .paragraph {
